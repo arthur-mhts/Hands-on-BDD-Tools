@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_products
+    description: "A starter dbt model"
+    columns:
+      - name: product_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
